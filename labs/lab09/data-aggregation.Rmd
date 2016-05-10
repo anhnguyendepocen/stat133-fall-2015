@@ -1,0 +1,84 @@
+---
+title: "Aggregating Data"
+author: "Gaston Sanchez"
+output: html_document
+---
+
+A very common task when analyzing data is data aggregation. In other words, summary statistics obtained conditional to some group or variable.
+
+```{r}
+head(iris)
+```
+
+There are three species of iris
+
+```{r}
+levels(iris$Species)
+```
+
+
+## Average `Sepal.Length` by species
+
+Following a traditional programming approach, we can use a `for` loop to obtain the average sepal length of each species:
+```{r}
+# vector of unique species
+species <- levels(iris$Species)
+
+# average sepal length (empty vector)
+asl <- numeric(length(species))
+
+for (s in 1:length(species)) {
+  aux <- iris$Species == species[s]
+  asl[s] <- mean(iris$Sepal.Length[aux])
+}
+names(asl) <- species
+asl
+```
+
+R, however, provides other alternatives to compute the average of sepal length. One option is to use `tapply()`
+
+```{r}
+tapply(iris$Sepal.Length, iris$Species, mean)
+```
+
+Instead of applying the `mean()` function, we could apply `summary()`
+```{r}
+tapply(iris$Sepal.Length, iris$Species, summary)
+```
+
+The same summary, but in different output format, can be obtained with `aggregate()`:
+```{r}
+aggregate(iris$Sepal.Length, list(iris$Species), summary)
+```
+
+Here's another example:
+```{r}
+tapply(iris$Sepal.Length, iris$Species, which.max)
+
+aggregate(iris$Sepal.Length, list(iris$Species), which.max)
+```
+
+-----
+
+Load the following packages:
+
+```{r}
+library(readr)
+library(stringr)
+```
+
+```{r}
+# import star-wars data
+sw <- read_csv('https://raw.githubusercontent.com/gastonstat/stat133/master/datasets/starwars.csv')
+```
+
+```{r}
+
+aggregate(sw[ ,c('height','weight')], list(sw$species), mean)
+```
+
+```{r}
+aggregate(sw[ ,c('height','weight')], 
+          list(sw$gender, sw$jedi), mean, na.rm=TRUE)
+```
+
