@@ -16,7 +16,7 @@ library("readr")
 
 # read data using read_csv()
 # (read_csv() does not convert strings into factors)
-sw <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/raw/master/data/starwarstoy.csv")
+sw <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/master/data/starwarstoy.csv")
 
 
 # use str() to get information about the data frame structure

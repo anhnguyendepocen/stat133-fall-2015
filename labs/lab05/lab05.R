@@ -18,7 +18,7 @@ library(readr)    # for reading data files
 library(ggplot2)  # for plots
 
 # read data
-tents <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/raw/master/data/tents1.csv")
+tents <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/master/data/tents1.csv")
 
 
 # =====================================================

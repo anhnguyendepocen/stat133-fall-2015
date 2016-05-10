@@ -35,7 +35,7 @@
 # e.g. in my case I'm specifying: "~/Downloads/tents1.csv"
 # (your 'destfile' will probably be different!)
 download.file(
-  url = 'https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/raw/master/data/tents1.csv', 
+  url = 'https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/master/data/tents1.csv', 
   destfile = '~/Downloads/tents1.csv')
 
 

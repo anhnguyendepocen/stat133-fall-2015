@@ -19,7 +19,7 @@ library(stringr)
 
 Read the data `bike-accidents.csv` from the github repository:
 ```{r}
-df <- read_csv("https://raw.githubusercontent.com/gastonstat/stat133/master/datasets/bike-accidents.csv")
+df <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/master/data/bike-accidents.csv")
 df <- read.csv("~/Documents/stat133/stat133/datasets/bike-accidents.csv", stringsAsFactors = FALSE, nrows = 1000)
 
 ```

@@ -12,7 +12,7 @@ Read the data `tents1.csv` from the github repository:
 ```{r}
 library(readr)
 
-df <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/raw/master/data/tents1.csv")
+df <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/master/data/tents1.csv")
 ```
 
 Quick inspection

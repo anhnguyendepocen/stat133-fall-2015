@@ -15,7 +15,7 @@
 
 # Read the data 
 library(readr)
-sc <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/raw/master/data/liga2015.csv")
+sc <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/master/data/liga2015.csv")
 
 # Let's start with the rutinary inspection
 # Check the data structure with str()

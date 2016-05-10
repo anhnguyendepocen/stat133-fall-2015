@@ -14,7 +14,7 @@ First, load the data.
 ```{r}
 library("readr")
 
-flags <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/raw/master/data/flags.csv")
+flags <- read_csv("https://raw.githubusercontent.com/ucb-stat133/stat133-fall-2015/master/data/flags.csv")
 ```
 
 We'll be working only with the first column (the `name` column), which contains the names of countries.
