@@ -1,6 +1,6 @@
 ## stat133-fall-2015
 
-This repository holds the course materials for the fall 2015 offering of Statistics 133 __Concepts in Computing with Data__ at UC Berkeley.
+This repository holds the course materials for the fall 2015 edition of Statistics 133 __Concepts in Computing with Data__ at UC Berkeley.
 
 Course website: [gastonsanchez.com/stat133](http://gastonsanchez.com/stat133)
 
